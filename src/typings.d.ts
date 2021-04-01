@@ -26,7 +26,7 @@ type GAFieldsObject = {
   nonInteraction?: boolean;
 };
 
-interface Window {
+type Window = {
   ga: (
     command: 'send',
     hitType: 'event' | 'pageview',
@@ -34,7 +34,7 @@ interface Window {
   ) => void;
   reloadAuthorized: () => void;
   routerBase: string;
-}
+};
 
 declare let ga: () => void;
 
